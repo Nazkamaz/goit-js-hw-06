@@ -1,13 +1,9 @@
 const formEl = document.querySelector(".login-form");
-console.log(formEl);
 
 function onFormSubmit(event){
 event.preventDefault();
 
 const emailEl = event.currentTarget.elements.email;
-
-console.log(emailEl.value);
-
 const passwordEl = event.currentTarget.elements.password;
 
 if(emailEl.value == '' || passwordEl.value == ''){
@@ -18,8 +14,7 @@ if(emailEl.value == '' || passwordEl.value == ''){
     console.log(formData);
     formEl.reset();
   
-};
-
+  };
 
 formEl.addEventListener('submit', onFormSubmit);
 
